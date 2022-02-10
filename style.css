@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.main{
+    width: 600px;
+    padding: 20px;
+    border: 2px solid rgb(97, 5, 5);
+    text-align: center;
+    margin: auto;
+}
+.hover{
+    width: 200px;
+ 
+    position: relative;
+    margin-top: -10px;
+}
+
+.hover img{
+    max-width:100%;
+}
+
+.text{
+    position: absolute ;
+    top: 0;
+    left: 0px;
+    color: aliceblue;
+    text-align: center;
+    width: ;
+    height: 0;
+    background:rgba(255,101,0,.5);
+    visibility: hidden;
+    transition: .5s;
+    opacity: 0;
+}
+
+   
+    .text h2{
+        margin-top: 60px;
+        font-size: 30px;
+        color: black;
+    }
+    p{
+        color: rgb(82, 250, 16);
+    }
+
+    .hover:hover .text{
+
+        height: 100%;
+        width: 100%;
+        visibility: visible;
+        opacity: 1;
+        
+    }
