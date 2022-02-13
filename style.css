@@ -1,54 +1,75 @@
 *{
-    margin:0;
+    margin: 0;
     padding: 0;
 }
-.main{
-    width: 600px;
-    padding: 20px;
-    border: 2px solid rgb(97, 5, 5);
+
+.menu{
+   background-color:  #192a56;;
+}
+
+.menu ul{
     text-align: center;
-    margin: auto;
-}
-.hover{
-    width: 200px;
- 
-    position: relative;
-    margin-top: -10px;
+ }
+
+.menu ul li{
+    display: inline-block;
+    margin-left: -4px;
+    
 }
 
-.hover img{
-    max-width:100%;
-}
-
-.text{
-    position: absolute ;
-    top: 0;
-    left: 0px;
+.menu ul li a{
     color: aliceblue;
-    text-align: center;
-    width: ;
-    height: 0;
-    background:rgba(255,101,0,.5);
-    visibility: hidden;
-    transition: .5s;
-    opacity: 0;
+    padding: 20px 30px;
+    font-size: 15px;
+    text-decoration: none;
+    border-right: 1px solid rgb(250, 231, 62);
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+  
 }
 
-   
-    .text h2{
-        margin-top: 60px;
-        font-size: 30px;
-        color: black;
-    }
-    p{
-        color: rgb(82, 250, 16);
-    }
+.menu ul li:first-child a{
+    border-left: 1px solid rgb(248, 192, 39);
+}
 
-    .hover:hover .text{
+.menu ul li:hover > a {
+    background: rgb(240, 82, 205);
+  
+}
+.menu ul li{
+    position: relative;
+}
+.menu ul li ul{
+    position: absolute ;
+    left: 0;
+    top: 100%; 
+    width: 180px;
+    background-color: #192a56;
+    border-top: 1px solid #fff;
+    transition:.2s;
+ 
+}
+.menu ul li ul li{
+    display: block;
 
-        height: 100%;
-        width: 100%;
-        visibility: visible;
-        opacity: 1;
-        
-    }
+}
+.menu ul li ul li a {
+    display: block;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+
+.menu ul li ul{
+ opacity: 0;
+ visibility: hidden;
+ transform: scaleY(0);
+ transform-origin: top center;
+}
+
+.menu ul li:hover ul{
+opacity: 1;
+ visibility: visible;
+ transform: scaleY(1);
+}
+  
+
